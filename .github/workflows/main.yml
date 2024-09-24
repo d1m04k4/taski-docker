@@ -34,9 +34,9 @@ jobs:
     - name: Test with flake8 and django tests
       # Добавляем env-переменные для доступа к БД
       env:
-        POSTGRES_USER: dima
-        POSTGRES_PASSWORD: 4789
-        POSTGRES_DB: django
+        POSTGRES_USER: django_user
+        POSTGRES_PASSWORD: django_password
+        POSTGRES_DB: django_db
         DB_HOST: 127.0.0.1
         DB_PORT: 5432
       run: |
